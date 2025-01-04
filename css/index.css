@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f4f4f4; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+section, h2, ul, p {
+    margin-bottom: 20px; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#About {
+    text-align: center; 
+}
+
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #2a4d69; 
+    text-transform: uppercase; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #4a90e2; 
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #fff; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+ul a {
+    color: #4a90e2; 
+    text-decoration: none; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+ul a:hover {
+    color: #2a4d69; 
+}
+
+
+h1 {
+    font-size: 3.5em; 
+    color: #2a4d69; 
+    letter-spacing: 3px;
+    margin-top: 50px;
+}
+
+
+section, h2, ul, p {
+    margin-bottom: 30px;
+}
