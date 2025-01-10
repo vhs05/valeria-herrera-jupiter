@@ -1,173 +1,108 @@
-
 * {
-    margin: 0;
-    padding: 0;
+
+    margin: 1;
+    padding: 1;
     box-sizing: border-box;
 }
-
-
-body {
-    background-color: #f4f4f4; 
-    color: #333; 
-    font-family: 'Arial', sans-serif; 
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #126ace;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
-}
-
-
-section, h2, ul, p {
-    margin-bottom: 20px; 
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-#About {
-    text-align: center; 
-}
-
-
-h1, h2 {
-    font-family: 'Roboto', sans-serif; 
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: 700;
-    color: #2a4d69; 
-    text-transform: uppercase; 
-    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .container {
+    display: grid;
+    color: #126ace;
+  }
+  
+  section, h2, ul, p {
     margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 600;
-    color: #4a90e2; 
-}
-
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    background-color: #fff; 
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-
-ul a {
-    color: #4a90e2; 
-    text-decoration: none; 
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-ul a:hover {
-    color: #2a4d69; 
-}
-
-
-h1 {
-    font-size: 3.5em; 
-    color: #2a4d69; 
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    color: #2a4d69;
     letter-spacing: 3px;
     margin-top: 50px;
-}
-
-
-section, h2, ul, p {
-    margin-bottom: 30px;
-}
-
-#Skills {
-    padding: 20px;
-}
-
-/* Projects Section */
-#Projects ul {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #4a90e2;
+  }
+  
+  ul {
     list-style: none;
     padding-left: 0;
-}
-
-#Projects ul li {
-    background-color: #fff; 
+  }
+  
+  ul li {
+    background-color: #fff;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#Projects ul li a {
-    color: #4a90e2; 
+  }
+  
+  ul a {
+    color: #4a90e2;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
-}
-
-#Projects ul li a:hover {
-    color: #0f72c4; 
-}
-
-/* Flexbox for Experience Section */
-#Experience {
+  }
+  
+  ul a:hover {
+    color: #2a4d69;
+  }
+  
+  Experience {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#Experience .job {
-    flex: 1;
+    align-items: flex-start;
+  }
+  
+  Experience .job {
+    flex: 0;
     padding: 10px;
     margin: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#Experience .job h3 {
-    font-size: 1.5em;
-    color: #2a4d69;
-}
-
-#Experience .job .date {
-    font-size: 1.1em;
-    color: #777;
-    text-align: right;
-}
-
-#Experience .job p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Flexbox for Connect Section */
-#Connect {
+    align-self: flex-start;
+  }
+  
+  Connect {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-#Connect a {
+  }
+  
+  Connect a {
     margin: 10px;
     font-size: 1.5em;
     color: #4a90e2;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-#Connect a:hover {
+  }
+  
+  Connect a:hover {
     color: #2a4d69;
-}
+  }
+  
+  Skills {
+    padding: 20px;
+  }
+
