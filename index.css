@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #126ace;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -18,28 +18,63 @@
     flex-wrap: nowrap;
   }
   
-  .container {
-    display: grid;
-    color: #126ace;
-  }
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content menu" 
+    "footer footer";
+grid-template-columns: 50fr;
+  gap: 5px;
+  background-color: #469ec3;
+  padding: 4px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+
+.container > div.content {
+  grid-area: content;
+  text-align: left;
+}
+.container > div.footer {
+  grid-area: footer;
+  text-align: center;
+}
   
   section, h2, ul, p {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   
   h1 {
-    font-size: 3.5em;
-    color: #2a4d69;
-    letter-spacing: 3px;
-    margin-top: 50px;
+    font-size: 2em;
+    color: #469ec3;
+    letter-spacing: 2px;
+    margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
   }
   
   h2 {
+    
+    border-color: #000000;
+    border-radius: 20%;
     font-size: 2em;
     font-weight: 600;
-    color: #4a90e2;
+    color: #469ec3;
   }
   
   ul {
@@ -56,7 +91,7 @@
   }
   
   ul a {
-    color: #4a90e2;
+    color: #469ec3;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -93,16 +128,15 @@
   Connect a {
     margin: 10px;
     font-size: 1.5em;
-    color: #4a90e2;
+    color: #469ec3;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   Connect a:hover {
-    color: #2a4d69;
+    color: #469ec3;
   }
   
   Skills {
     padding: 20px;
   }
-
