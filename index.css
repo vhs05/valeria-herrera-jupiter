@@ -25,6 +25,7 @@
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 
 
+
 .container {
   display: grid;
   grid-template-areas:
@@ -139,4 +140,40 @@ grid-template-columns: 50fr;
   
   Skills {
     padding: 20px;
+  }
+  
+  ul#messageList {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul#messageList li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  ul#messageList li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  ul#messageList li button {
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+  }
+  
+  ul#messageList li button:hover {
+    background-color: darkred;
+  }
+  
+
+  @media (max-width: 600px) {
+    form {
+      width: 95%;
+    }
   }
