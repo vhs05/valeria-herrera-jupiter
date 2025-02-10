@@ -177,3 +177,27 @@ grid-template-columns: 50fr;
       width: 95%;
     }
   }
+
+  #Projects ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #Projects ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #Projects ul li a {
+    color: #469ec3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  #Projects ul li a:hover {
+    color: #2a4d69;
+  }
